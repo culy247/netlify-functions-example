@@ -1,8 +1,8 @@
-const { AWS_LAMBDA_JS_RUNTIME } = process.env;
+const { AWS_EXECUTION_ENV } = process.env;
 
 exports.handler = async (event, context) => {
   return {
     statusCode: 200,
-    body: "Runtime: " + AWS_LAMBDA_JS_RUNTIME
+    body: "AWS Runtime: " + AWS_EXECUTION_ENV
   };
 };
