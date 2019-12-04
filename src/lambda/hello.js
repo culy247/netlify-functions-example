@@ -3,4 +3,5 @@ exports.handler = function(event, context, callback) {
     statusCode: 200,
     body: "Hello there!"
   });
+  console.log("yup" + process.env.AWS_EXECUTION_ENV)
 };
